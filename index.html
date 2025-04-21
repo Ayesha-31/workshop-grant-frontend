@@ -95,7 +95,7 @@
             resultDiv.innerHTML = "";
 
             try {
-                let response = await fetch(`http://localhost:5136/eligibility/student/${studentId}`);
+                let response = await fetch(`https://workshop-grant-backend.onrender.com/eligibility/student/${studentId}`);
                 let data = await response.json();
 
                 spinner.style.display = "none";
